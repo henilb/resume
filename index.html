@@ -32,10 +32,24 @@
 
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
+	
+
+    <script>
+      function disableClick(){
+        document.onclick=function(event){
+          if (event.button == 2) {
+            alert('Right Click Message');
+            return false;
+          }
+        }
+      }
+    </script>
 
 
 </head>
 
+<body onLoad="disableClick()">
+</body>
 <body id="page-top">
     
     
